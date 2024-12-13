@@ -4,8 +4,7 @@ author = "ArmaForces"
 files = [
     "LICENSE",
     "mod.cpp",
-    "README.md",
-    "armaforces_NEW_MOD_SNAKE_x64.dll",
+    "README.md"
 ]
 
 exclude = ["*.psd", "*.png", "*.tga"]
@@ -22,16 +21,6 @@ releasebuild = [
 
 [header_exts]
 version = "{{git \"id 8\"}}"
-
-[scripts.extension]
-    show_output = true
-    steps_windows = [
-        "cd extension && cargo build --release",
-        "copy extension\\target\\release\\armaforces_NEW_MOD_SNAKE.dll armaforces_NEW_MOD_SNAKE_x64.dll"
-    ]
-    steps_linux = [
-        "echo \"Unable to build extension on Linux\""
-    ]
 
 [scripts.set_version]
     steps_windows = [
