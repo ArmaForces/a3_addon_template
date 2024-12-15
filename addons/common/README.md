@@ -1,6 +1,6 @@
-## Main
+## Common
 
-Base for other components. Provides CBA Macros framework, editor categories and similar.
+Common functions used by other components.
 
 ### Authors
 
